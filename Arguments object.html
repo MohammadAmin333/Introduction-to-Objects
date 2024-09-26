@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Javascript
+    </title>
+</head>
+
+<body>
+<p id="max1"></p>
+    <script>
+var i;
+var max1=0;
+function findmax(){
+    for (i = 0; i < arguments.length; i++)
+{
+    if (arguments[i]>max1){
+        max1=arguments[i]
+    }
+}
+return max1;
+}
+      document.getElementById("max1").innerHTML =findmax(4,22,6,7,22,95,2,34,99);
+
+    </script>
+    
+</body>
+
+</html>
